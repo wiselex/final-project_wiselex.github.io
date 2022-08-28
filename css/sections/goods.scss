@@ -1,0 +1,510 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 576px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media screen and (min-width: 991px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@mixin Font($ff, $fst, $fw, $fz, $lhg, $clr) {
+  font-family: $ff;
+  font-style: $fst;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lhg;
+  color: $clr;
+}
+.goods {
+  max-width: 1440px;
+  margin: auto;
+  & .goods--block__dfl {
+    @media screen and (min-width: 991px) {
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 0px;
+      padding-top: 40px;
+      gap: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 78px;
+      gap: 60px;
+    }
+    & .goods--block__dfl-child1 {
+      padding: 0 20px;
+      @media screen and (min-width: 576px) {
+        padding: 0 25px;
+      }
+      @media screen and (min-width: 767px) {
+        padding: 0 50px;
+      }
+      @media screen and (min-width: 991px) {
+        padding: 0px;
+      }
+      & .goods--block__img1 {
+        max-width: 666px;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+        margin-top: 20px;
+        filter: brightness(1);
+        cursor: pointer;
+        &:hover {
+          filter: brightness(0.5);
+        }
+        @media screen and (min-width: 576px) {
+          display: block;
+          margin: auto;
+          margin-top: 30px;
+        }
+        @media screen and (min-width: 767px) {
+          margin-top: 45px;
+        }
+        @media screen and (min-width: 991px) {
+          margin-top: 0;
+        }
+      }
+      & .goods--block__dfl--cont {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 15px;
+        gap: 8px;
+        @media screen and (min-width: 576px) {
+          padding-top: 18px;
+          gap: 12px;
+        }
+        @media screen and (min-width: 767px) {
+          padding-top: 22px;
+          gap: 16px;
+        }
+        @media screen and (min-width: 991px) {
+          padding-top: 27px;
+          gap: 25px;
+        }
+        & .goods--block__img2 {
+          max-width: 159px;
+          width: 100%;
+          max-height: 144px;
+          height: 100%;
+          filter: brightness(1);
+          cursor: pointer;
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        & .goods--block__img3 {
+          max-width: 159px;
+          width: 100%;
+          max-height: 144px;
+          height: 100%;
+          filter: brightness(1);
+          cursor: pointer;
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+        & .goods--block__img4 {
+          max-width: 159px;
+          width: 100%;
+          max-height: 144px;
+          height: 100%;
+          filter: brightness(1);
+          cursor: pointer;
+          &:hover {
+            filter: brightness(0.5);
+          }
+        }
+      }
+    }
+    & .goods--block__dfl-child2 {
+      padding: 0 20px;
+      @media screen and (min-width: 576px) {
+        padding: 0 25px;
+      }
+      @media screen and (min-width: 767px) {
+        padding: 0 50px;
+      }
+      @media screen and (min-width: 991px) {
+        padding: 0px;
+      }
+      & .goods--block__item1 {
+        & .goods--block__title {
+          @include Font("Proxima Nova", normal, 700, 24px, 34px, #111010);
+          padding-top: 20px;
+          @media screen and (min-width: 576px) {
+            @include Font("Proxima Nova", normal, 700, 28px, 38px, #111010);
+          }
+          @media screen and (min-width: 767px) {
+            @include Font("Proxima Nova", normal, 700, 32px, 42px, #111010);
+            padding-top: 32px;
+          }
+          @media screen and (min-width: 991px) {
+            padding-top: 15px;
+            @include Font("Proxima Nova", normal, 700, 40px, 50px, #111010);
+          }
+          @media screen and (min-width: 1200px) {
+            @include Font("Proxima Nova", normal, 700, 48px, 58px, #111010);
+          }
+        }
+        & .goods--block__subtitle {
+          @include Font("Poppins", normal, 400, 18px, 30px, #000000);
+          padding-bottom: 10px;
+          @media screen and (min-width: 576px) {
+            @include Font("Poppins", normal, 400, 20px, 34px, #000000);
+          }
+          @media screen and (min-width: 767px) {
+            @include Font("Poppins", normal, 400, 26px, 40px, #000000);
+            padding-bottom: 16px;
+          }
+          @media screen and (min-width: 991px) {
+            @include Font("Poppins", normal, 400, 30px, 45px, #000000);
+            padding-bottom: 21px;
+          }
+        }
+        & .goods--block__text {
+          @include Font("Proxima Nova", normal, 400, 15px, 20px, #616161);
+          padding-bottom: 30px;
+          @media screen and (min-width: 576px) {
+            @include Font("Proxima Nova", normal, 400, 16px, 22px, #616161);
+          }
+          @media screen and (min-width: 767px) {
+            @include Font("Proxima Nova", normal, 400, 18px, 24px, #616161);
+            padding-bottom: 42px;
+          }
+          @media screen and (min-width: 991px) {
+            @include Font("Proxima Nova", normal, 400, 20px, 28px, #616161);
+            padding-bottom: 67px;
+            max-width: 610px;
+            width: 100%;
+            padding-right: 5px;
+          }
+          @media screen and (min-width: 1400px) {
+            padding-right: 0;
+          }
+        }
+      }
+      & .goods--block__item2 {
+        display: flex;
+        gap: 13px;
+        & .goods--block__btn1 {
+          @include Font("Inter", normal, 400, 15px, 20px, #000000);
+          padding: 5px 3px;
+          border: 1px solid black;
+          @media screen and (min-width: 576px) {
+            @include Font("Inter", normal, 400, 16px, 21px, #000000);
+            padding: 10px 20px;
+          }
+          @media screen and (min-width: 767px) {
+            @include Font("Inter", normal, 400, 18px, 22px, #000000);
+            padding: 20px 24px;
+          }
+          @media screen and (min-width: 991px) {
+            @include Font("Inter", normal, 400, 20px, 24px, #000000);
+          }
+          @media screen and (min-width: 1200px) {
+          }
+          &::before {
+            content: "-";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-right: 16px;
+            margin-left: 8px;
+            @media screen and (min-width: 576px) {
+              margin-right: 20px;
+              margin-left: 0px;
+            }
+            @media screen and (min-width: 767px) {
+              margin-right: 30px;
+            }
+            @media screen and (min-width: 991px) {
+              font-size: 24px;
+              margin-right: 34px;
+            }
+            @media screen and (min-width: 1200px) {
+              margin-right: 44px;
+            }
+          }
+          &::after {
+            content: "+";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-left: 16px;
+            margin-right: 8px;
+            @media screen and (min-width: 576px) {
+              margin-left: 20px;
+              margin-right: 0px;
+            }
+            @media screen and (min-width: 767px) {
+              margin-left: 30px;
+            }
+            @media screen and (min-width: 991px) {
+              font-size: 24px;
+              margin-left: 34px;
+            }
+            @media screen and (min-width: 1200px) {
+              margin-left: 44px;
+            }
+          }
+        }
+        & .goods--block__btn2 {
+          @include Font("Inter", normal, 400, 15px, 20px, #ffffff);
+          background-color: #22222b;
+          padding: 6px 25px;
+          transition: all 0.3s;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #22222b;
+            z-index: -2;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: darken(grey, 30%);
+            transition: all 0.3s;
+            z-index: -1;
+          }
+          &:hover {
+            color: #fff;
+            &::before {
+              width: 100%;
+            }
+          }
+          @media screen and (min-width: 576px) {
+            @include Font("Inter", normal, 400, 16px, 21px, #ffffff);
+            padding: 10px 28px;
+          }
+          @media screen and (min-width: 767px) {
+            @include Font("Inter", normal, 400, 18px, 22px, #ffffff);
+            padding: 20px 40px;
+          }
+          @media screen and (min-width: 991px) {
+            @include Font("Inter", normal, 400, 20px, 24px, #ffffff);
+            padding: 20px 44px;
+          }
+          @media screen and (min-width: 1200px) {
+            padding: 20px 57px;
+          }
+        }
+        & .goods--block__btn3 {
+          border: 1px solid black;
+          transition: all 0.3s;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            z-index: -2;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: darken(white, 30%);
+            transition: all 0.3s;
+            z-index: -1;
+          }
+          &:hover {
+            color: #fff;
+            &::before {
+              width: 100%;
+            }
+          }
+          @media screen and (min-width: 576px) {
+          }
+          & .goods--block__svg {
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            @media screen and (min-width: 576px) {
+              margin-top: 10px;
+              margin-left: 10px;
+              margin-right: 9px;
+              margin-bottom: 5px;
+            }
+            @media screen and (min-width: 767px) {
+              margin-right: 17px;
+              margin-left: 18px;
+            }
+            @media screen and (min-width: 991px) {
+            }
+          }
+        }
+      }
+      & .goods--block__item3 {
+        padding-top: 19px;
+        & .goods--block__list {
+          & .goods--block__list-child {
+            @include Font("Poppins", normal, 400, 15px, 20px, #000000);
+            @media screen and (min-width: 576px) {
+              @include Font("Poppins", normal, 400, 16px, 22px, #000000);
+            }
+            @media screen and (min-width: 767px) {
+              @include Font("Poppins", normal, 400, 18px, 27px, #000000);
+            }
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              border: 1px solid #c4c4c4;
+              background-color: #c4c4c4;
+              margin-right: 6px;
+              margin-bottom: 1px;
+              @media screen and (min-width: 576px) {
+                margin-right: 10px;
+              }
+              @media screen and (min-width: 767px) {
+                margin-right: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.goods-child {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.goods--block__bottom {
+  max-width: 1440px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  @media screen and (min-width: 576px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 991px) {
+    padding-left: 59px;
+    padding-right: 0px;
+    padding-top: 141px;
+    padding-bottom: 0;
+  }
+  & .goods--block__bottom-span1 {
+    @include Font("Poppins", normal, 400, 15px, 20px, #979797);
+    background: transparent;
+    @media screen and (min-width: 576px) {
+      @include Font("Poppins", normal, 400, 16px, 22px, #979797);
+    }
+    @media screen and (min-width: 767px) {
+      @include Font("Poppins", normal, 400, 18px, 26px, #979797);
+    }
+    @media screen and (min-width: 991px) {
+      @include Font("Poppins", normal, 400, 20px, 30px, #979797);
+    }
+  }
+  & .goods--block__bottom-span2 {
+    background: transparent;
+    @include Font("Poppins", normal, 600, 15px, 20px, #000000);
+    padding-left: 14px;
+    padding-right: 10px;
+    @media screen and (min-width: 576px) {
+      @include Font("Poppins", normal, 600, 16px, 22px, #000000);
+    }
+    @media screen and (min-width: 767px) {
+      @include Font("Poppins", normal, 600, 18px, 26px, #000000);
+      padding-left: 18px;
+      padding-right: 12px;
+    }
+    @media screen and (min-width: 991px) {
+      @include Font("Poppins", normal, 600, 20px, 30px, #000000);
+      padding-left: 23px;
+      padding-right: 16px;
+    }
+  }
+  & .goods--block__bottom-span3 {
+    background: transparent;
+    @include Font("Poppins", normal, 600, 15px, 20px, #000000);
+    @media screen and (min-width: 576px) {
+      @include Font("Poppins", normal, 600, 16px, 22px, #000000);
+    }
+    @media screen and (min-width: 767px) {
+      @include Font("Poppins", normal, 600, 18px, 26px, #000000);
+    }
+    @media screen and (min-width: 991px) {
+      @include Font("Poppins", normal, 600, 20px, 30px, #000000);
+    }
+  }
+  & .goods--block__bottom-text {
+    @include Font("Poppins", normal, 400, 15px, 20px, #000000);
+    padding-top: 16px;
+    @media screen and (min-width: 576px) {
+      @include Font("Poppins", normal, 400, 16px, 22px, #000000);
+    }
+    @media screen and (min-width: 767px) {
+      @include Font("Poppins", normal, 400, 18px, 26px, #000000);
+      padding-top: 24px;
+    }
+    @media screen and (min-width: 991px) {
+      @include Font("Poppins", normal, 400, 20px, 30px, #000000);
+      max-width: 1290px;
+      width: 100%;
+      padding-top: 39px;
+    }
+  }
+}
+.goods--block__bottom-item {
+  text-align: center;
+}

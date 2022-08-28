@@ -1,0 +1,141 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 576px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media screen and (min-width: 991px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@mixin Font($ff, $fst, $fw, $fz, $lhg, $clr) {
+  font-family: $ff;
+  font-style: $fst;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lhg;
+  color: $clr;
+}
+
+.top {
+  background-image: url("../img/back_uss.webp"),
+    url("../img/ussual_kitchen.webp");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, top center;
+  height: 526px;
+  max-width: 1920px;
+  margin: auto;
+  & .top__block--item {
+    max-width: 1440px;
+    margin: auto;
+    padding-top: 200px;
+    @media screen and (min-width: 767px) {
+      padding-top: 210px;
+    }
+    @media screen and (min-width: 991px) {
+      padding-top: 215px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 227px;
+    }
+    & .top__title {
+      @include Font("Proxima Nova", normal, 700, 40px, 40px, #ffffff);
+      text-transform: uppercase;
+      padding-bottom: 11px;
+      @media screen and (min-width: 576px) {
+        @include Font("Proxima Nova", normal, 700, 44px, 44px, #ffffff);
+      }
+      @media screen and (min-width: 767px) {
+        @include Font("Proxima Nova", normal, 700, 48px, 48px, #ffffff);
+        padding-bottom: 15px;
+      }
+      @media screen and (min-width: 991px) {
+        @include Font("Proxima Nova", normal, 700, 56px, 56px, #ffffff);
+        padding-bottom: 21px;
+      }
+      @media screen and (min-width: 1200px) {
+        @include Font("Proxima Nova", normal, 700, 72px, 72px, #ffffff);
+        padding-bottom: 31px;
+      }
+    }
+    & .top__text {
+      @include Font("Proxima Nova", normal, 400, 15px, 20px, #e4e4e4);
+      max-width: 657px;
+      width: 100%;
+      @media screen and (min-width: 767px) {
+        @include Font("Proxima Nova", normal, 400, 16px, 22px, #e4e4e4);
+      }
+      @media screen and (min-width: 991px) {
+        @include Font("Proxima Nova", normal, 400, 18px, 24px, #e4e4e4);
+      }
+      @media screen and (min-width: 1200px) {
+        @include Font("Proxima Nova", normal, 400, 20px, 28px, #e4e4e4);
+      }
+    }
+  }
+}
+.fof {
+  max-width: 1440px;
+  margin: auto;
+}
+.block {
+  margin-top: -101px;
+  margin-left: 35px;
+  & .bla {
+    @include Font("Proxima Nova", normal, 400, 15px, 28px, #ffffff);
+    padding-bottom: 6px;
+  }
+  & .title {
+    @include Font("Proxima Nova", normal, 700, 25px, 25px, #ffffff);
+    padding-bottom: 6px;
+  }
+  & .text {
+    @include Font("Proxima Nova", normal, 400, 18px, 28px, #bcbcbc);
+  }
+}
+
+.god {
+  position: relative;
+  display: inline-block;
+  //   z-index: 1;
+}
+.god::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgb(0, 0, 0, 0.5);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.65) -16.21%,
+    rgba(196, 196, 196, 0) 118.83%
+  );
+}

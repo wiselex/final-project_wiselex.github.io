@@ -1,0 +1,578 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.foot {
+  background-color: #111010;
+  padding-top: 29px;
+}
+@media screen and (min-width: 991px) {
+  .foot {
+    padding-top: 68px;
+  }
+}
+.foot .foot--block__dfl {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.foot--svg__hvr:hover {
+  filter: invert(0.5);
+}
+
+.foot--block__dfl--ico {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dfl--ico {
+    display: block;
+    margin-bottom: 43px;
+  }
+}
+
+.foot--block__dfl-child2 {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dfl-child2 {
+    display: block;
+  }
+}
+
+.foot--block__dfl-child3 {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dfl-child3 {
+    display: block;
+  }
+}
+
+.foot--block__dfl-child4 {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dfl-child4 {
+    display: block;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot--block__dfl-child4 {
+    padding-right: 44px;
+  }
+}
+
+.foot--block__dfl--title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+}
+
+.foot--block__dfl--text a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a4a4a4;
+  text-transform: capitalize;
+  position: relative;
+}
+.foot--block__dfl--text a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #a4a4a4;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.foot--block__dfl--text a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.foot--block__dfl--text1 a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+  position: relative;
+}
+.foot--block__dfl--text1 a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: white;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.foot--block__dfl--text1 a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.foot--block__dfl--adr {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.foot--block__item-pic1 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.foot--block__dfl-logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 38px;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dfl-logo {
+    display: none;
+  }
+}
+
+.foot--block__dfl-logo1 {
+  display: none;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dfl-logo1 {
+    display: block;
+    margin-bottom: 61px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot--block__dfl-logo1 {
+    margin-bottom: 82px;
+  }
+}
+
+.foot--block__brbt {
+  border-bottom: 1px solid #474747;
+  margin-bottom: 34px;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__brbt {
+    display: none;
+  }
+}
+
+.foot--block__item {
+  text-align: center;
+  padding-bottom: 19px;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__item {
+    display: none;
+  }
+}
+
+.foot--block__item-pic {
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.foot--block__dflt-bold-text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 9px;
+  color: white;
+  position: relative;
+}
+.foot--block__dflt-bold-text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: white;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.foot--block__dflt-bold-text:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.foot--block__dflt {
+  max-width: 1440px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dflt {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 27px;
+  }
+}
+.foot--block__dflt .foot--block__dflt-text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 9px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.183333px;
+  opacity: 0.5;
+}
+@media screen and (min-width: 991px) {
+  .foot--block__dflt .foot--block__dflt-text {
+    text-align: start;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .u--pd20 {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .foot--drop {
+    display: none;
+  }
+}
+
+.dropdown {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+.dropdown label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  text-transform: capitalize;
+}
+.dropdown label::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-bottom: 1.5px solid #ffffff;
+  border-right: 1.5px solid #ffffff;
+  transform: rotateZ(45deg);
+  transition: all 0.3s;
+  margin-left: auto;
+}
+.dropdown #dropdown {
+  display: none;
+}
+.dropdown #dropdown:checked ~ .dropdown-list {
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+  align-items: center;
+}
+.dropdown #dropdown:checked ~ .dropdown-list .dropdown-list--first a {
+  color: #ffffff;
+  padding-top: 10px;
+  position: relative;
+}
+.dropdown #dropdown:checked ~ .dropdown-list .dropdown-list--first a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: white;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown #dropdown:checked ~ .dropdown-list .dropdown-list--first a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.dropdown #dropdown:checked ~ .dropdown-list li:first-child {
+  padding-top: 10px;
+}
+.dropdown #dropdown:checked ~ .dropdown-list li:last-child {
+  padding-bottom: 10px;
+}
+.dropdown #dropdown:checked ~ .dropdown-list li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a4a4a4;
+  text-transform: capitalize;
+  position: relative;
+}
+.dropdown #dropdown:checked ~ .dropdown-list li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #a4a4a4;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown #dropdown:checked ~ .dropdown-list li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.dropdown #dropdown:checked ~ label::after {
+  transform: rotateZ(-135deg);
+}
+.dropdown-list {
+  display: none;
+}
+
+.dropdown_second {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+.dropdown_second label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  text-transform: capitalize;
+}
+.dropdown_second label::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-bottom: 1.5px solid #ffffff;
+  border-right: 1.5px solid #ffffff;
+  transform: rotateZ(45deg);
+  transition: all 0.3s;
+  margin-left: auto;
+}
+.dropdown_second #dropdown_second {
+  display: none;
+}
+.dropdown_second #dropdown_second:checked ~ .dropdown_second-list {
+  display: grid;
+  grid-template-columns: repeat(1, 180px);
+  align-items: center;
+}
+.dropdown_second #dropdown_second:checked ~ .dropdown_second-list li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #a4a4a4;
+  text-transform: capitalize;
+  position: relative;
+}
+.dropdown_second #dropdown_second:checked ~ .dropdown_second-list li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #a4a4a4;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.dropdown_second #dropdown_second:checked ~ .dropdown_second-list li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.dropdown_second #dropdown_second:checked ~ .dropdown_second-list li:first-child {
+  padding-top: 10px;
+}
+.dropdown_second #dropdown_second:checked ~ .dropdown_second-list li:last-child {
+  padding-bottom: 10px;
+}
+.dropdown_second #dropdown_second:checked ~ label::after {
+  transform: rotateZ(-135deg);
+}
+.dropdown_second-list {
+  display: none;
+}
+
+.dropdown_third {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 32px;
+}
+.dropdown_third label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  text-transform: capitalize;
+}
+.dropdown_third label::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-bottom: 1.5px solid #ffffff;
+  border-right: 1.5px solid #ffffff;
+  transform: rotateZ(45deg);
+  transition: all 0.3s;
+  margin-left: auto;
+}
+.dropdown_third #dropdown_third {
+  display: none;
+}
+.dropdown_third #dropdown_third:checked ~ .dropdown_third-list {
+  display: grid;
+  grid-template-columns: repeat(1, 290px);
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 374px) {
+  .dropdown_third #dropdown_third:checked ~ .dropdown_third-list {
+    grid-template-columns: repeat(1, 330px);
+  }
+  .dropdown_third #dropdown_third:checked ~ .dropdown_third-list p {
+    padding-top: 10px;
+  }
+}
+.dropdown_third #dropdown_third:checked ~ label::after {
+  transform: rotateZ(-135deg);
+}
+.dropdown_third-list {
+  display: none;
+}
+
+@media screen and (min-width: 991px) {
+  .foot-cart {
+    margin-top: 147px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .foot-cart {
+    margin-top: 135px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .foot-cart {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .prod-foot {
+    margin-top: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .prod-foot {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .prod-foot {
+    margin-top: -29px;
+  }
+}

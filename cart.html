@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="Put your description here.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/index.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <title>Cart</title>
+</head>
+<body>
+   <header class="head">
+      <nav class="menu">
+         <div class="container">
+            <a aria-label="logotype" class="logo__icon" href="index.html"><svg height="36" width="102"><use xlink:href="./img/icons.svg#icon-7"></use></svg></a>
+            <div class="dfh">
+               <div class="sidenav-dn">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a class="sidenav--grey" href="index.html#works-home">Home</a>
+                     <a href="index.html#middle-spaces">Spaces</a>
+                     <a href="#">Products & Services</a>
+                     <a href="#">Showrooms</a>
+                     <a href="#">Company</a>
+                     <a href="#">Media</a>
+                     <a href="#">Contact</a>
+                  </div>
+                  <button aria-label="menu" alt="menu" onclick="openNav()"><svg height="12" width="24"><use xlink:href="./img/icons.svg#icon-4"></use></svg></button>
+               </div>
+               <a class="menu__item-picture" href="#"><svg class="head--svg__hvr" height="17" width="17"><use xlink:href="./img/icons.svg#icon-5"></use></svg></a>
+               <a aria-label="logotype" class="menu__item-logo" href="index.html"><svg height="36" width="102"><use xlink:href="./img/icons.svg#icon-7"></use></svg></a>
+               <div class="menu__list">
+                  <ul class="menu__list-item">
+                     <li><a class="menu__list-item1" href="index.html#works-home">Home</a></li>
+                     <li><a href="index.html#middle-spaces">Spaces</a></li>
+                     <li><a href="">Products & Services</a></li>
+                     <li><a href="">Showrooms</a></li>
+                     <li><a href="">Company</a></li>
+                     <li><a href="">Media</a></li>
+                     <li><a href="">CONTACT</a></li>
+                  </ul>
+               </div>
+               <div class="head__icon">
+                  <a aria-label="cart" class="head__icon-item1" href="#"><svg  class="head__icon-picture1 head--svg__hvr" height="20" width="22"><use xlink:href="./img/icons.svg#icon-2"></use></svg></a>
+                  <a class="head__icon-item2 items__pd" href="#"><svg class="head--svg__hvr" height="17" width="20"><use xlink:href="./img/icons.svg#icon-3"></use></svg></a>
+                  <a class="head__icon-item2 items__pdr" href="#"><svg class="head--svg__hvr" height="18" width="15"><use xlink:href="./img/icons.svg#icon-6"></use></svg></a>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="cart">
+         <div class="cart--bcg">
+         </div>
+         <div class="cart--item">
+            <h1 class="cart__title">Shopping Cart</h1>
+            <div class="cart--block">
+               <a aria-label="left arrow" class="cart__links" href="index.html"><svg class="cart__svg" height="16" width="32"><use xlink:href="./img/icons.svg#icon-28"></use></svg></a>
+               <p class="cart__text">Continue Shopping</p>
+            </div>
+         </div>
+      </section>
+      <section class="choise">
+         <div class="choise--contain">
+            <div class="choise--block__grid">
+               <div class="choise--block__grid-child1">
+                  <p class="choise--block__grid-span">Unit Price</p>
+               </div>
+               <div class="choise--block__grid-child2">
+                  <p class="choise--block__grid-span">QTY</p>
+               </div>
+               <div class="choise--block__grid-child3">
+                  <p class="choise--block__grid-span">Total SAR</p>
+               </div>
+               <div class="choise--block__grid-child4">
+                  <picture>
+                     <img src="./img/room_cart.webp" alt="beatiful room" srcset="./img/room_cart.webp 1x, ./img/room_cart@2x.webp 2x">
+                  </picture>
+               </div>
+               <div class="choise--block__grid-child5">
+                  <h3 class="choise--block__grid-title">Product Name</h3>
+                  <p class="choise--block__grid-text">Lorem Ipsum</p>
+               </div>
+               <div class="choise--block__grid-child6">
+                  <span class="choise--block__grid-price">199.00</span>
+               </div>
+               <div class="choise--block__grid-child7">
+                  <button aria-label="minus" alt="minus" class="choise--block__grid-btn1"><svg class="choise--block__grid-svg1" height="1" width="11"><use xlink:href="./img/icons.svg#icon-26"></use></svg></button>
+                  <span class="choise--block__grid--quan">1</span>
+                  <button aria-label="plus" alt="plus" class="choise--block__grid-btn2"><svg class="choise--block__grid-svg2" height="11" width="11"><use xlink:href="./img/icons.svg#icon-27"></use></svg></button>
+               </div>
+               <div class="choise--block__grid-child8">
+                  <span class="choise--block__grid-price">199.00</span>
+               </div>
+               <div class="choise--block__grid-child9">
+               <button aria-label="bin" alt="bin">
+                  <svg class="choise--block__svg-hover" height="15" width="15"><use xlink:href="./img/icons.svg#icon-1"></use></svg>
+               </button>
+               </div>
+               <div class="choise--block__grid-child10">
+                  <picture>
+                     <img src="./img/room_cart.webp" alt="beatiful room" srcset="./img/room_cart.webp 1x, ./img/room_cart@2x.webp 2x">
+                  </picture>
+               </div>
+               <div class="choise--block__grid-child11">
+                  <h3 class="choise--block__grid-title">Product Name</h3>
+                  <p class="choise--block__grid-text">Lorem Ipsum</p>
+               </div>
+               <div class="choise--block__grid-child12">
+                  <span class="choise--block__grid-price">199.00</span>
+               </div>
+               <div class="choise--block__grid-child13">
+                  <button aria-label="minus" alt="minus" class="choise--block__grid-btn1"><svg class="choise--block__grid-svg1" height="1" width="11"><use xlink:href="./img/icons.svg#icon-26"></use></svg></button>
+                  <span class="choise--block__grid--quan">1</span>
+                  <button aria-label="plus" alt="plus" class="choise--block__grid-btn2"><svg class="choise--block__grid-svg2" height="11" width="11"><use xlink:href="./img/icons.svg#icon-27"></use></svg></button>
+               </div>
+               <div class="choise--block__grid-child14">
+                  <span class="choise--block__grid-price">199.00</span>
+               </div>
+               <div class="choise--block__grid-child15">
+                  <button aria-label="bin" alt="bin">
+                     <svg class="choise--block__svg-hover" height="15" width="15"><use xlink:href="./img/icons.svg#icon-1"></use></svg>
+                  </button>
+               </div>
+               <div class="choise--block__grid-child16">
+                  <picture>
+                     <img src="./img/room_cart.webp" alt="beatiful room" srcset="./img/room_cart.webp 1x, ./img/room_cart@2x.webp 2x">
+                  </picture>
+               </div>
+               <div class="choise--block__grid-child17">
+                  <h3 class="choise--block__grid-title">Product Name</h3>
+                  <p class="choise--block__grid-text">Lorem Ipsum</p>
+               </div>
+               <div class="choise--block__grid-child18">
+                  <span class="choise--block__grid-price">199.00</span>
+               </div>
+               <div class="choise--block__grid-child19">
+                  <button aria-label="minus" alt="minus" class="choise--block__grid-btn1"><svg class="choise--block__grid-svg1" height="1" width="11"><use xlink:href="./img/icons.svg#icon-26"></use></svg></button>
+                  <span class="choise--block__grid--quan">1</span>
+                  <button aria-label="plus" alt="plus" class="choise--block__grid-btn2"><svg class="choise--block__grid-svg2" height="11" width="11"><use xlink:href="./img/icons.svg#icon-27"></use></svg></button>
+               </div>
+               <div class="choise--block__grid-child20">
+                  <span class="choise--block__grid-price">199.00</span>
+               </div>
+               <div class="choise--block__grid-child21">
+                  <button aria-label="bin" alt="bin">
+                     <svg class="choise--block__svg-hover" height="15" width="15"><use xlink:href="./img/icons.svg#icon-1"></use></svg>
+                  </button>
+               </div>
+               <div class="choise--block__grid-child22"></div>
+               <div class="choise--block__grid-child23"></div>
+               <div class="choise--block__grid-child24"></div>
+            </div>
+            <div class="choise--dropdown">
+               <div class="dropdown-choise">
+                  <input type="checkbox" id="dropdown-choise">
+                  <label for="dropdown-choise">Do you have a voucher? <b class="choise-dropdown__subtext">(Optional)</b></label>
+                  <div class="dropdown-choise-list">
+                     <div class="dropdown-choise-list__item">
+                        <input type="text" name="mename" class="dropdown-choise-list__input" placeholder="Enter the code">
+                        <!-- <button class="dropdown-choise-list__btn1">Enter the code</button> -->
+                        <button class="dropdown-choise-list__btn2">Redeem</button>
+                     </div>
+                     <div class="dropdown-choise-list__brbt"></div>
+                     <div class="dropdown-choise-list__item2">
+                        <p class="dropdown-choise-list__text1">Subtotal</p>
+                        <span class="dropdown-choise-list__text2">138,00 SAR</span>
+                        <p class="dropdown-choise-list__text3">shipping</p>
+                        <span class="dropdown-choise-list__text4">5,91 SAR</span>
+                     </div>
+                     <div class="dropdown-choise-list__brbt1"></div>
+                     <div class="dropdown-choise-list__item3">
+                        <p class="dropdown-choise-list__price1">Total</p>
+                        <span class="dropdown-choise-list__price2">(VAT included.)</span>
+                        <span class="dropdown-choise-list__price3">143,91 SAR</span>
+                     </div>
+                     <a href="check-out.html">
+                        <button class="dropdown-choise-list__btn3">Safe to checkout</button>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="materials matertials--cart">
+         <h2 class="materials--block__title-cart">Recently Viewed Products</h2>
+         <div class="materials--block__grid materials--block__grid-product1">
+            <div class="materials--block__grid-child5 materials--block__for-all">
+               <a href="product.html">
+                  <picture>
+                     <img class="materials--block__picture" width="" height="" src="./img/windsor_oak.webp" alt="windsor oak" srcset="./img/windsor_oak.webp 1x, ./img/windsor_oak@2x.webp 2x">
+                  </picture>
+                  <div class="materials--grid__block">
+                     <h3 class="materials--grid__title">Windsor White Oak</h3>
+                     <div class="materials--grid__spn">
+                        <span class="materials--grid__und-text">449.99 SAR</span>
+                        <span class="materials--grid__text">312.49 SAR</span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="materials--block__grid-child6 materials--block__for-all">
+               <a href="product.html">
+                  <picture>
+                     <img class="materials--block__picture" width="" height="" src="./img/sicily_grey.webp" alt="sicily grey" srcset="./img/sicily_grey.webp 1x, ./img/sicily_grey@2x.webp 2x">
+                  </picture>
+                  <div class="materials--grid__block">
+                     <h3 class="materials--grid__title">Sicily Grey Décor 30×60</h3>
+                     <div class="materials--grid__spn">
+                        <span class="materials--grid__und-text">449.99 SAR</span>
+                        <span class="materials--grid__text">312.49 SAR</span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="materials--block__grid-child7 materials--block__for-all">
+               <a href="product.html">
+                  <picture>
+                     <img class="materials--block__picture" width="" height="" src="./img/sardinia_white.webp" alt="sardinia white" srcset="./img/sardinia_white.webp 1x, ./img/sardinia_white@2x.webp 2x">
+                  </picture>
+                  <div class="materials--grid__block">
+                     <h3 class="materials--grid__title">Sardinia White</h3>
+                     <div class="materials--grid__spn">
+                        <span class="materials--grid__und-text">449.99 SAR</span>
+                        <span class="materials--grid__text">312.49 SAR</span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="materials--block__grid-child8 materials--block__for-all">
+               <a href="product.html">
+                  <picture>
+                     <img class="materials--block__picture" width="" height="" src="./img/sicily_grey-anoth.webp" alt="sicily grey" srcset="./img/sicily_grey-anoth.webp 1x, ./img/sicily_grey-anoth@2x.webp 2x">
+                  </picture>
+                  <div class="materials--grid__block">
+                     <h3 class="materials--grid__title">Sicily Grey 30×60</h3>
+                     <div class="materials--grid__spn">
+                        <span class="materials--grid__und-text">449.99 SAR</span>
+                        <span class="materials--grid__text">312.49 SAR</span>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+         <h2 class="materials--block__slide-title">Recently Viewed Products</h2>
+         <div class="container contain materials--swiper">
+            <div class="swiper mySwiper">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="materials--block__slide-par materials--block__slide-hov">                        
+                        <a href="product.html">
+                           <picture>
+                              <img class="materials--block__picture" width="" height="" src="./img/windsor_oak.webp" alt="windsor oak" srcset="./img/windsor_oak.webp 1x, ./img/windsor_oak@2x.webp 2x">
+                           </picture>
+                           <div class="materials--grid__block">
+                              <h3 class="materials--grid__title">Windsor White Oak</h3>
+                              <div class="materials--grid__spn">
+                                 <span class="materials--grid__und-text">449.99 SAR</span>
+                                 <span class="materials--grid__text">312.49 SAR</span>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="materials--block__slide-par materials--block__slide-hov">                        
+                        <a href="product.html">
+                           <picture>
+                              <img class="materials--block__picture" width="" height="" src="./img/sicily_grey.webp" alt="sicily grey" srcset="./img/sicily_grey.webp 1x, ./img/sicily_grey@2x.webp 2x">
+                           </picture>
+                           <div class="materials--grid__block">
+                              <h3 class="materials--grid__title">Sicily Grey Décor 30×60</h3>
+                              <div class="materials--grid__spn">
+                                 <span class="materials--grid__und-text">449.99 SAR</span>
+                                 <span class="materials--grid__text">312.49 SAR</span>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="materials--block__slide-par materials--block__slide-hov">                        
+                        <a href="product.html">
+                           <picture>
+                              <img class="materials--block__picture" width="" height="" src="./img/sardinia_white.webp" alt="sardinia white" srcset="./img/sardinia_white.webp 1x, ./img/sardinia_white@2x.webp 2x">
+                           </picture>
+                           <div class="materials--grid__block">
+                              <h3 class="materials--grid__title">Sardinia White</h3>
+                              <div class="materials--grid__spn">
+                                 <span class="materials--grid__und-text">449.99 SAR</span>
+                                 <span class="materials--grid__text">312.49 SAR</span>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="materials--block__slide-par materials--block__slide-hov">                        
+                        <a href="product.html">
+                           <picture>
+                              <img class="materials--block__picture" width="" height="" src="./img/sicily_grey-anoth.webp" alt="sicily grey" srcset="./img/sicily_grey-anoth.webp 1x, ./img/sicily_grey-anoth@2x.webp 2x">
+                           </picture>
+                           <div class="materials--grid__block">
+                              <h3 class="materials--grid__title">Sicily Grey 30×60</h3>
+                              <div class="materials--grid__spn">
+                                 <span class="materials--grid__und-text">449.99 SAR</span>
+                                 <span class="materials--grid__text">312.49 SAR</span>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="foot foot-cart">
+      <div class="container">
+         <div class="foot--block__dfl">
+            <div class="foot--block__dfl-child1">
+               <a aria-label="logotype" href="index.html"><svg class="foot--block__dfl-logo1" height="57" width="162"><use xlink:href="./img/icons.svg#icon-12"></use></svg></a>
+               <div class="foot--block__dfl--ico">
+                  <a aria-label="facebook" href="https://www.facebook.com/" target="_blank"><svg class="foot--svg__hvr" height="16" width="9"><use xlink:href="./img/icons.svg#icon-13"></use></svg></a>
+                  <a aria-label="twitter" href="https://twitter.com/" target="_blank"><svg class="foot--block__item-pic1 foot--svg__hvr" height="15" width="18"><use xlink:href="./img/icons.svg#icon-14"></use></svg></a>
+                  <a aria-label="instagram" href="https://www.instagram.com/" target="_blank"><svg class="foot--svg__hvr" height="18" width="18"><use xlink:href="./img/icons.svg#icon-15"></use></svg></a>
+               </div>
+            </div>
+            <div class="foot--block__dfl-child2">
+               <h3 class="foot--block__dfl--title">Products</h3>
+               <div class="foot--block__dfl--list">
+                  <ul class="foot--block__dfl--text">
+                     <li class="foot--block__dfl--text1"><a href="#">Sand Stone</a></li>
+                     <li><a href="#">Stone</a></li>
+                     <li><a href="#">Cement</a></li>
+                     <li><a href="#">Soft Stone</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="foot--block__dfl-child3">
+               <h3 class="foot--block__dfl--title">Services</h3>
+               <div class="foot--block__dfl--list1">
+                  <ul class="foot--block__dfl--text">
+                     <li><a href="#">Measurement Service</a></li>
+                     <li><a href="#">Product Advice</a></li>
+                     <li><a href="#">Interior Design</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="foot--block__dfl-child4">
+               <h3 class="foot--block__dfl--title">Contact information</h3>
+               <p class="foot--block__dfl--adr">3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, <br> An Nuzhah, Riyadh 12474, <br> Saudi Arabia</p>
+            </div>
+         </div>
+         <a aria-label="logotype" href="index.html"><svg class="foot--block__dfl-logo" height="43" width="122"><use xlink:href="./img/icons.svg#icon-11"></use></svg></a>
+         <div class="foot--drop">
+            <div class="dropdown">
+               <input type="checkbox" id="dropdown">
+               <label for="dropdown">Products</label>
+               <div class="dropdown-list">
+                  <ul>
+                     <li class="dropdown-list--first"><a href="#">Sand Stone</a></li>
+                     <li><a href="#">Stone</a></li>
+                     <li><a href="#">Cement</a></li>
+                     <li><a href="#">Soft Stone</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="dropdown_second">
+               <input type="checkbox" id="dropdown_second">
+               <label for="dropdown_second">Services</label>
+               <div class="dropdown_second-list">
+                  <ul>
+                     <li><a href="#">Measurement Service</a></li>
+                     <li><a href="#">Product Advice</a></li>
+                     <li><a href="#">Interior Design</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="dropdown_third">
+               <input type="checkbox" id="dropdown_third">
+               <label for="dropdown_third">Contact information</label>
+               <div class="dropdown_third-list">
+                  <p class="foot--block__dfl--adr">3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, <br> An Nuzhah, Riyadh 12474, <br> Saudi Arabia</p> 
+               </div>
+            </div>
+         </div>
+         <div class="foot--block__brbt"></div>
+         <div class="foot--block__item">
+            <a aria-label="facebook" href="https://www.facebook.com/" target="_blank"><svg class="foot--svg__hvr" height="22" width="12"><use xlink:href="./img/icons.svg#icon-8"></use></svg></a>
+            <a aria-label="twitter" href="https://twitter.com/" target="_blank"><svg class="foot--block__item-pic foot--svg__hvr" height="21" width="25"><use xlink:href="./img/icons.svg#icon-9"></use></svg></a>
+            <a aria-label="instagram" href="https://www.instagram.com/" target="_blank"><svg class="foot--svg__hvr" height="25" width="26"><use xlink:href="./img/icons.svg#icon-10"></use></svg></a>
+         </div>
+         <div class="foot--block__dflt">
+            <p class="foot--block__dflt-text">Copyright © 2022 | All Rights Reserved</p>
+            <p class="foot--block__dflt-text u--pd20">Created with love by <a href="https://thecreation.design/" target="_blank" class="foot--block__dflt-bold-text">thecreation.design</a></p>
+         </div>
+      </div>
+   </footer>
+   <script src="./js/main.js"></script>
+</body>
+</html>

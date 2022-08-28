@@ -1,0 +1,253 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.promotions {
+  max-width: 1440px;
+  margin: auto;
+}
+.promotions .promotions--block__item {
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 427px) {
+  .promotions .promotions--block__item {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .promotions .promotions--block__item {
+    padding-top: 42px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .promotions .promotions--block__item {
+    padding-top: 64px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .promotions .promotions--block__item {
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promotions .promotions--block__item {
+    padding-left: 23px;
+  }
+}
+.promotions .promotions--block__item .promotions--block__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+@media screen and (min-width: 576px) {
+  .promotions .promotions--block__item .promotions--block__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    color: #000000;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .promotions .promotions--block__item .promotions--block__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: #000000;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .promotions .promotions--block__item .promotions--block__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+    padding-top: 30px;
+    padding-left: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promotions .promotions--block__item .promotions--block__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    padding-top: 39px;
+    padding-left: 32px;
+  }
+}
+.promotions .promotions--block__item .promotions--block__text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #000000;
+  max-width: 481px;
+  width: 100%;
+  padding-bottom: 24px;
+  padding-left: 10px;
+}
+@media screen and (min-width: 576px) {
+  .promotions .promotions--block__item .promotions--block__text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    padding-bottom: 36px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .promotions .promotions--block__item .promotions--block__text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .promotions .promotions--block__item .promotions--block__text {
+    padding-left: 24px;
+    padding-bottom: 39px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promotions .promotions--block__item .promotions--block__text {
+    padding-left: 32px;
+  }
+}
+
+.promotions--block__picture {
+  max-width: 886px;
+  width: 100%;
+  max-height: 231px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 576px) {
+  .promotions--block__picture {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .promotions--block__picture {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .promotions--block__picture {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .promotions--dfl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promotions--dfl {
+    padding-top: 124px;
+    padding-bottom: 100px;
+  }
+}
+
+.promotions--block__cont {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 576px) {
+  .promotions--block__cont {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .promotions--block__cont {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .promotions--block__cont {
+    padding: 0;
+  }
+}

@@ -1,0 +1,211 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.choose {
+  background-image: url("../img/flower.webp"), url("../img/blabla.webp");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: top center, top center;
+  padding-top: 20px;
+  max-width: 1920px;
+  margin: auto;
+}
+@media screen and (min-width: 767px) {
+  .choose {
+    padding-top: 40px;
+  }
+}
+.choose .choose--block__item {
+  max-width: 1440px;
+  margin: auto;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 576px) {
+  .choose .choose--block__item {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .choose .choose--block__item {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 70px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .choose .choose--block__item {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choose .choose--block__item {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .choose .choose--block__item {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .choose .choose--block__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.choose .choose--block__item .choose--block__lnk {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+@media screen and (min-width: 767px) {
+  .choose .choose--block__item .choose--block__lnk {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choose .choose--block__item .block-link1 {
+    padding-left: 33px;
+  }
+}
+.choose .choose--block__item .block-link1::after {
+  content: "";
+  border-bottom: 1.5px solid white;
+  border-right: 1.5px solid white;
+  transform: rotateZ(315deg);
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  margin-right: 20px;
+}
+.choose .choose--block__item .block-link1 {
+  position: relative;
+}
+.choose .choose--block__item .block-link1::before {
+  content: "";
+  position: absolute;
+  width: 83%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: white;
+  top: 27px;
+  bottom: 0;
+  left: -4px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+@media screen and (min-width: 767px) {
+  .choose .choose--block__item .block-link1::before {
+    top: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .choose .choose--block__item .block-link1::before {
+    left: 30px;
+    width: 68%;
+  }
+}
+.choose .choose--block__item .block-link1:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.choose .choose--block__item .block-link2::after {
+  content: "";
+  border-bottom: 1.5px solid white;
+  border-right: 1.5px solid white;
+  transform: rotateZ(315deg);
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+  margin-right: 21px;
+}
+.choose .choose--block__item .block-link2 {
+  position: relative;
+}
+.choose .choose--block__item .block-link2::before {
+  content: "";
+  position: absolute;
+  width: 83%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: white;
+  top: 27px;
+  bottom: 0;
+  left: -4px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+@media screen and (min-width: 767px) {
+  .choose .choose--block__item .block-link2::before {
+    top: 34px;
+  }
+}
+.choose .choose--block__item .block-link2:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.choose .choose--block__item .block-link3 {
+  border-bottom: 3px solid #c4c4c4;
+  padding-bottom: 5px;
+}

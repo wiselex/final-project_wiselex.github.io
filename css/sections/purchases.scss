@@ -1,0 +1,968 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 576px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media screen and (min-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media screen and (min-width: 991px) {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+@mixin Font($ff, $fst, $fw, $fz, $lhg, $clr) {
+  font-family: $ff;
+  font-style: $fst;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lhg;
+  color: $clr;
+}
+.purchases--block__form {
+  background-color: #fafafa;
+  max-width: 421px;
+  width: 100%;
+  margin: auto;
+  margin-top: -30px;
+  @media screen and (min-width: 767px) {
+    margin-top: -20px;
+  }
+  @media screen and (min-width: 991px) {
+    margin: 0;
+    margin-top: -87px;
+  }
+  & .purchases--block__form-btn1 {
+    @include Font("Inter", normal, 400, 15px, 18px, #ffffff);
+    text-align: center;
+    padding: 14px 20px;
+    display: inline-block;
+    background-color: #000000;
+    margin-left: 20px;
+    margin-top: 21px;
+    margin-bottom: 19px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      z-index: -2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken(grey, 30%);
+      transition: all 0.3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &::before {
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+    }
+  }
+  & .purchases--block__form-btn2 {
+    @include Font("Inter", normal, 400, 15px, 18px, #000000);
+    border: 1px solid #000000;
+    padding: 13px 24px;
+    margin-left: -4px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      z-index: -2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken(white, 30%);
+      transition: all 0.3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &::before {
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 425px) {
+    }
+  }
+  & .purchases--block__form-inp1 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 15px 100px 12px 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 362px;
+      padding: 13px 10px 12px 18px;
+    }
+  }
+  & .purchases--block__form-inp2 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 15px 100px 12px 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 362px;
+      padding: 13px 10px 12px 18px;
+    }
+  }
+  & .purchases--block__form-inp3 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 15px 100px 12px 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 362px;
+      padding: 13px 10px 12px 18px;
+    }
+  }
+  & .purchases--block__form-inp4 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 13px 100px 14px 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 239px;
+      padding: 12px 10px 13px 18px;
+    }
+  }
+  & .purchases--block__form-inp5 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 13px 105px 14px 13px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 2px;
+      padding: 12px 5px 13px 13px;
+      width: 116px;
+    }
+  }
+  & .purchases--block__form-inp6 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 15px 100px 12px 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 158px;
+      padding: 13px 5px 12px 18px;
+    }
+  }
+  & .purchases--block__form-inp7 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 13px 96px 14px 22px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 4px;
+      width: 195px;
+      padding: 13px 6px 12px 22px;
+    }
+  }
+  & .purchases--block__form-inp8 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 15px 100px 12px 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 362px;
+      padding: 13px 10px 12px 18px;
+    }
+  }
+  & .purchases--block__form-inp8-bla {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 15px 10px 12px 18px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 278 px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 362px;
+      padding: 13px 10px 12px 18px;
+    }
+  }
+  & .purchases--block__form-inp9 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 15px 100px 12px 18px;
+    margin-left: 20px;
+    margin-bottom: 6px;
+    @media screen and (min-width: 425px) {
+      margin-left: 28px;
+      width: 362px;
+      padding: 13px 10px 12px 18px;
+    }
+  }
+  & .purchases--block__form-svg3 {
+    display: none;
+    margin-left: -40px;
+    @media screen and (min-width: 425px) {
+    }
+  }
+  & .purchases--block__form-subtext {
+    @include Font("Inter", normal, 400, 12px, 15px, rgba(130, 130, 130, 0.85));
+    padding-left: 20px;
+    @media screen and (min-width: 425px) {
+      padding-left: 28px;
+    }
+  }
+  & .purchases--block__form-text {
+    @include Font("Proxima Nova", normal, 400, 15px, 15px, #000000);
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+    @media screen and (min-width: 425px) {
+      padding-left: 57px;
+      padding-right: 60px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      border: 1px solid rgba(112, 112, 112, 0.4);
+      width: 16px;
+      height: 16px;
+      margin-left: -27px;
+      margin-right: 12px;
+      margin-bottom: -20px;
+      cursor: pointer;
+    }
+  }
+  & .purchases--block__form-svg1 {
+    margin-bottom: -3px;
+    margin-left: 45px;
+    margin-right: 1px;
+    @media screen and (min-width: 425px) {
+      margin-left: 58px;
+    }
+  }
+  & .purchases--block__form-subtext2 {
+    @include Font("Proxima Nova", normal, 400, 10px, 10px, #828282);
+    @media screen and (min-width: 425px) {
+    }
+  }
+  & .purchases--block__form-svg2 {
+    margin-bottom: -3px;
+    margin-left: 22px;
+    margin-top: 24px;
+    cursor: pointer;
+    @media screen and (min-width: 425px) {
+      margin-left: 30px;
+    }
+  }
+  & .purchases--block__form-subtext3 {
+    @include Font("Proxima Nova", normal, 400, 15px, 18px, #000000);
+    padding-left: 7px;
+    @media screen and (min-width: 425px) {
+      margin-left: 14px;
+      padding-left: 0;
+    }
+  }
+  & .purchases--block-inp {
+    margin-top: 18px;
+    @media screen and (min-width: 425px) {
+    }
+  }
+}
+.purchases--block__form2-item1 {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 424px;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  @media screen and (min-width: 991px) {
+    margin: 0;
+  }
+  & .purchases--block__form2-img1 {
+    max-width: 62px;
+    width: 100%;
+    max-height: 39px;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 21px;
+    margin-left: 23px;
+  }
+  & .purchases--block__form2-subtext1 {
+    @include Font("Proxima Nova", normal, 700, 15px, 18px, rgba(0, 0, 0, 0.85));
+    padding-left: 15px;
+    &::after {
+      content: "";
+      display: inline-block;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      width: 19px;
+      height: 19px;
+      margin-left: 130px;
+      margin-bottom: -5px;
+      cursor: pointer;
+      @media screen and (min-width: 425px) {
+        margin-left: 225px;
+      }
+    }
+  }
+}
+.purchases--block__form2-item2 {
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 424px;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  @media screen and (min-width: 991px) {
+    margin: 0;
+    margin-top: 10px;
+  }
+  & .purchases--block__form2-img2 {
+    max-width: 62px;
+    width: 100%;
+    max-height: 39px;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 21px;
+    margin-left: 23px;
+  }
+  & .purchases--block__form2-subtext2 {
+    @include Font("Proxima Nova", normal, 700, 15px, 18px, rgba(0, 0, 0, 0.85));
+    padding-left: 15px;
+    &::after {
+      content: "";
+      display: inline-block;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      width: 19px;
+      height: 19px;
+      margin-left: 100px;
+      margin-bottom: -5px;
+      cursor: pointer;
+      @media screen and (min-width: 425px) {
+        margin-left: 194px;
+      }
+    }
+  }
+}
+.purchases--block__form2-form {
+  background-color: #fafafa;
+  max-width: 424px;
+  width: 100%;
+  margin: auto;
+  @media screen and (min-width: 991px) {
+    margin: 0;
+  }
+  & .purchases--block__form2-inp1 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 13px 10px 12px 19px;
+    margin-left: 23px;
+    width: 280px;
+    margin-top: 41px;
+    @media screen and (min-width: 425px) {
+      width: 381px;
+    }
+  }
+  & .purchases--block__form2-inp2 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 13px 10px 12px 18px;
+    margin-left: 23px;
+    width: 120px;
+    margin-top: 15px;
+    @media screen and (min-width: 425px) {
+      width: 158px;
+    }
+  }
+  & .purchases--block__form2-inp3 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 13px 10px 12px 23px;
+    margin-left: 10px;
+    width: 146px;
+    margin-top: 15px;
+    @media screen and (min-width: 425px) {
+      width: 208px;
+    }
+  }
+  & .purchases--block__form2-inp4 {
+    border: 1px solid rgba(130, 130, 130, 0.4);
+    @include Font(
+      "Proxima Nova",
+      normal,
+      400,
+      15px,
+      18px,
+      rgba(130, 130, 130, 0.85)
+    );
+    padding: 13px 10px 12px 19px;
+    margin-left: 23px;
+    width: 280px;
+    margin-top: 15px;
+    margin-bottom: 32px;
+    @media screen and (min-width: 425px) {
+      width: 381px;
+    }
+  }
+}
+.purchases--block__form2-item3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+  & .purchases--block__form2-img3 {
+    max-width: 62px;
+    width: 100%;
+    max-height: 39px;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 21px;
+    margin-left: 23px;
+  }
+  & .purchases--block__form2-subtext3 {
+    @include Font("Proxima Nova", normal, 700, 15px, 18px, rgba(0, 0, 0, 0.85));
+    padding-left: 15px;
+  }
+  & .purchases--block__form2-svg {
+    margin-left: 67px;
+    cursor: pointer;
+    @media screen and (min-width: 425px) {
+      margin-left: 162px;
+    }
+  }
+}
+.purchases--block__form3 {
+  max-width: 424px;
+  width: 100%;
+  margin: auto;
+  background-color: #fafafa;
+  margin-top: 25px;
+  @media screen and (min-width: 991px) {
+    margin: 0;
+    margin-top: 50px;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-top: 0;
+  }
+  & .purchases--block__form3-dfl {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & .purchases--block__form3-dfl-title1 {
+      @include Font("Inter", normal, 500, 17px, 21px, #000000);
+      padding-top: 21px;
+      padding-left: 30px;
+    }
+    & .purchases--block__form3-dfl-title2 {
+      @include Font("Inter", normal, 500, 17px, 21px, #000000);
+      text-align: right;
+      padding-top: 21px;
+      padding-right: 46px;
+    }
+  }
+  & .purchases--block__form3-brbt {
+    border: 1px solid rgba(224, 224, 224, 0.1);
+    margin-top: 17px;
+    margin-bottom: 24px;
+  }
+  & .purchases--block__form3-item1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & .purchases--block__form3-img {
+      max-width: 81px;
+      width: 100%;
+      max-height: 101px;
+      height: 100%;
+      margin-left: 30px;
+    }
+    & .purchases--block__form3-item1-subtext1 {
+      display: block;
+      @include Font("Proxima Nova", normal, 500, 17px, 25px, #000000);
+      padding-left: 19px;
+    }
+    & .purchases--block__form3-item1-subtext2 {
+      display: block;
+      padding-left: 19px;
+      @include Font("Proxima Nova", normal, 400, 17px, 25px, #a7a7a7);
+    }
+    & .purchases--block__form3-item1-subtext3 {
+      display: block;
+      padding-left: 19px;
+      @include Font("Proxima Nova", normal, 700, 17px, 25px, #000000);
+    }
+    & .purchases--block__form3-item1-subtext4 {
+      display: block;
+      padding-left: 19px;
+      @include Font("Proxima Nova", normal, 400, 17px, 25px, #828282);
+    }
+    & .purchases--block__form3-item1-text {
+      @include Font("Proxima Nova", normal, 400, 17px, 21px, #000000);
+      text-align: right;
+      margin-left: auto;
+      padding-right: 20px;
+      @media screen and (min-width: 425px) {
+        padding-right: 39px;
+      }
+    }
+  }
+  & .purchases--block__form3-brbt1 {
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  & .purchases--block__form3-brbt2 {
+    border: 2px solid #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  & .purchases--block__form3-item2 {
+    padding-top: 38px;
+    & .purchases--block__form3-item2-subtext1 {
+      @include Font("Proxima Nova", normal, 400, 17px, 17px, #000000);
+      padding-left: 30px;
+      margin-top: 38px;
+      margin-bottom: 27px;
+    }
+    & .purchases--block__form3-item2-subtext2 {
+      @include Font(
+        "Proxima Nova",
+        normal,
+        400,
+        15px,
+        15px,
+        rgba(130, 130, 130, 0.85)
+      );
+      padding-left: 9px;
+      margin-top: 38px;
+      margin-bottom: 27px;
+    }
+    & .purchases--block__form3-item2-inp1 {
+      border: 1px solid rgba(130, 130, 130, 0.4);
+      @include Font(
+        "Proxima Nova",
+        normal,
+        400,
+        16px,
+        15px,
+        rgba(130, 130, 130, 0.85)
+      );
+      padding: 12px 10px 12px 18px;
+      margin-left: 30px;
+      margin-top: 27px;
+      margin-bottom: 43px;
+      width: 140px;
+      @media screen and (min-width: 425px) {
+        width: 182px;
+      }
+    }
+    & .purchases--block__form3-item2-inp2 {
+      background-color: #000000;
+      @include Font(
+        "Proxima Nova",
+        normal,
+        700,
+        20px,
+        20px,
+        rgba(255, 255, 255, 0.85)
+      );
+      padding: 12px 10px 14px 8px;
+      margin-left: 6px;
+      margin-top: 27px;
+      margin-bottom: 43px;
+      width: 120px;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        z-index: -2;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken(grey, 30%);
+        transition: all 0.3s;
+        z-index: -1;
+      }
+      &:hover {
+        color: #fff;
+        &::before {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 425px) {
+        width: 171px;
+      }
+    }
+  }
+  & .purchases--block__form3-item3 {
+    & .purchases--block__form3-item3-subtext1 {
+      @include Font("Proxima Nova", normal, 400, 17px, 17px, #000000);
+      padding-left: 30px;
+      padding-right: 140px;
+      @media screen and (min-width: 425px) {
+        padding-right: 221px;
+      }
+    }
+    & .purchases--block__form3-item3-subtext2 {
+      @include Font("Proxima Nova", normal, 400, 17px, 21px, #000000);
+      text-align: right;
+    }
+    & .purchases--block__form3-item3-subtext3 {
+      @include Font(
+        "Proxima Nova",
+        normal,
+        400,
+        17px,
+        17px,
+        rgba(130, 130, 130, 0.85)
+      );
+      padding-left: 30px;
+      padding-right: 140px;
+      padding-top: 10px;
+      @media screen and (min-width: 425px) {
+        padding-right: 222px;
+      }
+    }
+    & .purchases--block__form3-item3-subtext4 {
+      @include Font(
+        "Proxima Nova",
+        normal,
+        400,
+        17px,
+        21px,
+        rgba(130, 130, 130, 0.85)
+      );
+      text-align: right;
+      padding-top: 10px;
+    }
+    & .purchases--block__form3-item3-text {
+      @include Font(
+        "Proxima Nova",
+        normal,
+        400,
+        17px,
+        17px,
+        rgba(130, 130, 130, 0.85)
+      );
+      padding-top: 12px;
+      padding-left: 30px;
+      padding-bottom: 29px;
+    }
+  }
+}
+.purchases--block__form3-item3-spnpd {
+  padding-top: 10px;
+}
+.purchases--block__form4 {
+  max-width: 424px;
+  width: 100%;
+  margin: auto;
+  background-color: #fafafa;
+  margin-top: 21px;
+  @media screen and (min-width: 991px) {
+    margin: 0;
+    margin-top: 21px;
+  }
+  & .purchases--block__form4-inp {
+    background-color: #000000;
+    @include Font("Proxima Nova", normal, 700, 20px, 24px, #ffffff);
+    padding-top: 12px;
+    padding-bottom: 9px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    width: 280px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      z-index: -2;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken(grey, 30%);
+      transition: all 0.3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &::before {
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 425px) {
+      width: 362px;
+    }
+  }
+  & .purchases--block__form4-text {
+    @include Font("Inter", normal, 400, 15px, 18px, rgba(130, 130, 130, 0.85));
+    padding-bottom: 25px;
+    padding-left: 54px;
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      border: 1px solid #707070;
+      display: block;
+      margin-bottom: -19px;
+      margin-left: -27px;
+      cursor: pointer;
+    }
+  }
+  & .purchases--block__form4-item {
+    & .purchases--block__form4-subtext1 {
+      @include Font("Proxima Nova", normal, 400, 17px, 17px, #000000);
+      padding-left: 26px;
+      padding-right: 140px;
+      @media screen and (min-width: 425px) {
+        padding-right: 235px;
+      }
+    }
+    & .purchases--block__form4-subtext2 {
+      @include Font("Inter", normal, 500, 17px, 21px, #000000);
+      text-align: right;
+    }
+    & .purchases--block__form4-item--spnpd {
+      padding-top: 5px;
+      padding-bottom: 17px;
+      & .purchases--block__form4-subtext3 {
+        @include Font(
+          "Inter",
+          normal,
+          400,
+          15px,
+          18px,
+          rgba(130, 130, 130, 0.85)
+        );
+        padding-left: 26px;
+        padding-right: 170px;
+        @media screen and (min-width: 425px) {
+          padding-right: 264px;
+        }
+      }
+      & .purchases--block__form4-subtext4 {
+        @include Font(
+          "Inter",
+          normal,
+          400,
+          15px,
+          18px,
+          rgba(130, 130, 130, 0.85)
+        );
+        text-align: right;
+      }
+    }
+  }
+}
+.purchases--block-3and4 {
+  padding-bottom: 50px;
+  @media screen and (min-width: 991px) {
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1400px) {
+    position: absolute;
+    top: 0;
+    left: 900px;
+  }
+}
+.purchases--block__cont {
+  @media screen and (min-width: 991px) {
+    position: relative;
+  }
+}
+.purchases--block__form2 {
+  @media screen and (min-width: 991px) {
+    position: absolute;
+    top: 0px;
+    left: 494px;
+  }
+  @media screen and (min-width: 1400px) {
+    left: 446px;
+  }
+}
+.purchases {
+  max-width: 1302px;
+  margin: auto;
+}

@@ -1,0 +1,220 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.top {
+  background-image: url("../img/back_uss.webp"), url("../img/ussual_kitchen.webp");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, top center;
+  height: 526px;
+  max-width: 1920px;
+  margin: auto;
+}
+.top .top__block--item {
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 200px;
+}
+@media screen and (min-width: 767px) {
+  .top .top__block--item {
+    padding-top: 210px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .top .top__block--item {
+    padding-top: 215px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top .top__block--item {
+    padding-top: 227px;
+  }
+}
+.top .top__block--item .top__title {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-bottom: 11px;
+}
+@media screen and (min-width: 576px) {
+  .top .top__block--item .top__title {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 44px;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 767px) {
+  .top .top__block--item .top__title {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #ffffff;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .top .top__block--item .top__title {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    color: #ffffff;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top .top__block--item .top__title {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 72px;
+    color: #ffffff;
+    padding-bottom: 31px;
+  }
+}
+.top .top__block--item .top__text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #e4e4e4;
+  max-width: 657px;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .top .top__block--item .top__text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #e4e4e4;
+  }
+}
+@media screen and (min-width: 991px) {
+  .top .top__block--item .top__text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #e4e4e4;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top .top__block--item .top__text {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #e4e4e4;
+  }
+}
+
+.fof {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.block {
+  margin-top: -101px;
+  margin-left: 35px;
+}
+.block .bla {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #ffffff;
+  padding-bottom: 6px;
+}
+.block .title {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  color: #ffffff;
+  padding-bottom: 6px;
+}
+.block .text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #bcbcbc;
+}
+
+.god {
+  position: relative;
+  display: inline-block;
+}
+
+.god::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.65) -16.21%, rgba(196, 196, 196, 0) 118.83%);
+}
